@@ -15,9 +15,9 @@ variable "ingressCIDRBlock" {
 }
 
 variable "egressCIDRBlock" {
-  default = "209.128.21.10/32"
+  default = #preffered cidr block
 }
 
 variable "destinationCIDRBlock" {
-  default = "209.128.21.10/32"
+  default = #preffered cidr block
 }
