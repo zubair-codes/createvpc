@@ -159,12 +159,12 @@ resource "aws_security_group" "zubair-private-sg" {
   description = "Security group for private subnet in zubair-research-vpc"
 
 
-//  egress {
-//    cidr_blocks = ["0.0.0.0/0"]
-//    from_port = 0
-//    protocol = "-1"
-//    to_port = 0
-//  }
+  egress {
+    cidr_blocks = ["0.0.0.0/0"]
+    from_port = 0
+    protocol = "-1"
+    to_port = 0
+  }
 
   tags = {
     Name = "zubair-private-sg"
